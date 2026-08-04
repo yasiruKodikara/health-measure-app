@@ -112,42 +112,36 @@
                 <th>Height</th>
                 <th>BMI</th>
             </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>70kg</td>
-                <td>175cm</td>
-                <td>22.9</td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>70kg</td>
-                <td>175cm</td>
-                <td>22.9</td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>70kg</td>
-                <td>175cm</td>
-                <td>22.9</td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>70kg</td>
-                <td>175cm</td>
-                <td>22.9</td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>70kg</td>
-                <td>175cm</td>
-                <td>22.9</td>
-            </tr>
+            <?php
+                include_once 'dbc.php';
+
+                // SQL query to fetch data 
+                $sql = "SELECT * FROM bmi_data";
+                $result = mysqli_query($conn, $sql);
+
+                if(mysqli_num_rows($result)>0){
+                    while($row = mysqli_fetch_assoc($result)){
+                        echo "
+                        <tr>
+                            <td>{$row['name']}</td>
+                            <td>{$row['weight']}</td>
+                            <td>{$row['height']}</td>
+                            <td>{$row['bmi']}</td>
+                        </tr>
+                        ";
+                    }
+                }else{
+                    echo "<tr><td colspan='4'>No data found</td></tr>";
+                }
+
+            ?>
         </table>
     </div>
 
     <script src="validate.js"></script>
     
 
+   
     
 
 </body>
