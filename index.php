@@ -35,10 +35,24 @@
             display:block;;
             padding:15px;
             text-decoration:none;
-            background-color: #002ffe39;
+            background-color: rgba(247, 136, 0, 0.5);
             color:black;
             margin:5px;
-            border-radius:5px;
+            border-radius:0px 10px 0px 10px;
+            
+            
+
+        }
+        li a:hover{
+            display:block;;
+            padding:15px;
+            text-decoration:none;
+            background-color: #00126039;
+            background-color: rgba(247, 136, 0, 0.5);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.27);
+            color:black;
+            margin:5px;
+            border-radius:0px 10px 0px 10px;
             
             
 
@@ -48,9 +62,9 @@
             width:100%;
         }
 
-        h1{
+        h1, .main-para{
             margin:auto;
-            width:100%;
+            width:60%;
             text-align:center;
             color:white;
 
@@ -70,8 +84,28 @@
             background-position:center;
         }
 
-        .sub-heading{
+        .sub-para, .sub-heading{
             color:black;
+            width:60%;
+            text-align:center;
+            margin:auto;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+
+        .feat-sec-2{
+            background-color:rgb(0, 0, 0);
+            backdrop-filter:blur(10px);
+            padding-top:50px;
+            padding-bottom:50px;
+            
+        }
+
+        .sub-heading-2, .sub-para-2{
+            color:white;
+            width:60%;
+            text-align:center;
+            margin:auto;
             margin-top:50px;
             margin-bottom:50px;
         }
@@ -99,6 +133,24 @@
             backdrop-filter:blur(10px);
             
         }
+        .footer ul li{
+            display:inline;
+            float:left;
+            
+        }
+
+        .footer li a{
+            display:block;;
+            padding:15px;
+            text-decoration:none;
+            background-color: #002ffe39;
+            color:black;
+            margin:5px;
+            border-radius:5px;
+            
+            
+
+        }
 
         *{
             box-sizing:border-box;
@@ -121,6 +173,7 @@
      <div class="hero">
         <div class="container">
             <h1 class="main-heading">Your Health, Our Priority</h1>
+            <p class="main-para">We are dedicated to helping you live a healthier, happier life through quality healthcare, experienced professionals, and compassionate service. Whether you need a routine check-up or specialized treatment, we're here for you every step of the way.</p>
         </div>
      </div>
     </section>
@@ -129,6 +182,20 @@
      
         <div class="container">
             <h1 class="sub-heading">Our Services</h1>
+            <p class="sub-para">Comprehensive Medical Services
+
+                From general consultations and diagnostic testing to specialized treatments and emergency care, we offer a wide range of healthcare services designed to meet the needs of individuals and families.</p>
+        </div>
+     
+    </section>
+
+    <section class="feat-sec-2">
+     
+        <div class="container">
+            <h1 class="sub-heading-2">Our Services</h1>
+            <p class="sub-para-2">Comprehensive Medical Services
+
+                From general consultations and diagnostic testing to specialized treatments and emergency care, we offer a wide range of healthcare services designed to meet the needs of individuals and families.</p>
         </div>
      
     </section>

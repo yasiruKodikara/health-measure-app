@@ -49,6 +49,19 @@
 
         }
 
+        li a:hover{
+            display:block;;
+            padding:15px;
+            text-decoration:none;
+            background-color: #00126039;
+            color:black;
+            margin:5px;
+            border-radius:5px;
+            
+            
+
+        }
+
         .container{
             margin-top:100px;
             width:100%;
@@ -60,6 +73,15 @@
             margin-top:20px;
             margin:auto;
             border:1px solid black;
+
+        }
+        .container table tr:hover{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            margin:auto;
+            border:1px solid black;
+            background-color:rgb(221, 221, 221);
 
         }
 
@@ -100,6 +122,8 @@
             <li class="nav-item"><a href="history.php">History</a></li>
         </ul>
      </div>
+
+     
 
      <h1 class="main-heading">BMI History</h1>
 

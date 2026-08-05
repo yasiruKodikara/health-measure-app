@@ -48,6 +48,18 @@
             
 
         }
+        li a:hover{
+            display:block;;
+            padding:15px;
+            text-decoration:none;
+            background-color: #00126039;
+            color:black;
+            margin:5px;
+            border-radius:5px;
+            
+            
+
+        }
 
         .container{
             margin-top:100px;
