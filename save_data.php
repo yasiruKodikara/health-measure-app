@@ -6,7 +6,7 @@
     $height = $_POST["height"];
     $bmi = $_POST['bmi'];
 
-    $sql = "INSERT INTO bmi_data (name,height,weight,bmi) VALUES('$name','$weight','$height','$bmi');";
+    $sql = "INSERT INTO bmi_data (name,height,weight,bmi) VALUES('$name','$height','$weight','$bmi');";
 
     $result = mysqli_query($conn,$sql);
 
