@@ -117,6 +117,18 @@
                 <input type="number" id="weight" name="weight" class="form-control">
                 <small class="form-text  text-danger"></small>
             </div>
+            <label>Gender:</label><br>
+
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <br><br>
             <div class="mb-3">
                 <label for="height" class="form-label">Height (cm)</label>
                 <input type="number" id="height" name="height" class="form-control">

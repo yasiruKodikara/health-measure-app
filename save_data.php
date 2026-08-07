@@ -5,8 +5,9 @@
     $weight = $_POST["weight"];
     $height = $_POST["height"];
     $bmi = $_POST['bmi'];
+    $gender = $_POST["gender"];
 
-    $sql = "INSERT INTO bmi_data (name,height,weight,bmi) VALUES('$name','$height','$weight','$bmi');";
+    $sql = "INSERT INTO bmi_data (name,gender,height,weight,bmi) VALUES('$name','$gender','$height','$weight','$bmi');";
 
     $result = mysqli_query($conn,$sql);
 

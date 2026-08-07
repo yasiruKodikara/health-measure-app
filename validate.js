@@ -58,6 +58,15 @@ const form = document.querySelector('form');
                 
             }
 
+            if (gender.value==="") {
+                height.nextElementSibling.innerText = 'Please select gender';
+                height.classList.add('error-input');
+
+                hasError = true;
+                
+                
+            }
+
             if(hasError){
                 return;
             }

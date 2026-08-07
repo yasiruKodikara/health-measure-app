@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
         body{
             margin:0;
         }
@@ -112,7 +117,7 @@
 
         .footer{
             margin:auto;
-            position:fixed;
+            
             bottom:0;
             left:0;
             width: 100%;
@@ -154,6 +159,13 @@
 
         *{
             box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        .footer{
+            text-align:center;
+            padding:15px;
         }
 
 
@@ -208,6 +220,10 @@
             <li class="nav-item"><a href="history.php">History</a></li>
         </ul>
      </div>
+
+     <footer class="footer">
+        <p>&copy; 2026 Your Website. All Rights Reserved.</p>
+    </footer>
      
 </body>
 </html>

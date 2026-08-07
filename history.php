@@ -132,6 +132,7 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Gender</th>
                 <th>Weight</th>
                 <th>Height</th>
                 <th>BMI</th>
@@ -148,6 +149,7 @@
                         echo "
                         <tr>
                             <td>{$row['name']}</td>
+                            <td>{$row['gender']}</td>
                             <td>{$row['weight']}</td>
                             <td>{$row['height']}</td>
                             <td>{$row['bmi']}</td>
